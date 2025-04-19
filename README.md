@@ -3,11 +3,6 @@
 This project demonstrates the use of **Fast Fourier Transform (FFT)** to perform cross-correlation between two images. FFT-based correlation offers a computationally efficient way to measure alignment and similarity between signals or images, which is especially useful in computer vision tasks like object tracking and image registration.
 ## 📁 Notebook Overview: `Fourier_cross_corelation.ipynb`
 ### 🔧 1. **Library Imports and Helper Functions**
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-import cv2
-```
 
 - `cv2` (OpenCV): Used to read and resize grayscale images.
 - `matplotlib`: For plotting images and correlation results.
@@ -33,21 +28,8 @@ upload = files.upload()
 ---
 
 ### 🖼️ 3. **Image Selection**
-```python
-image_path1 = '325.jpg'
-image_path2 = '326.jpg'
-```
 - Two images are selected for cross-correlation comparison.
 
----
-
-### ⚙️ 4. **TensorFlow Import**
-```python
-import tensorflow as tf
-```
-- TensorFlow is imported but not used in the notebook, suggesting possible future extension or leftover code.
-
----
 
 ### 📊 5. **Cross-Correlation via FFT**
 ```python
@@ -88,13 +70,6 @@ plt.title('Cross-Correlation Heatmap')
 - A heatmap showing where the two images are most similar.
 - The brighter the region, the higher the similarity.
 
----
-
-## 🧠 What You’ll Learn
-
-- How to efficiently measure similarity between images using FFT.
-- Image preprocessing and normalization techniques.
-- Real-world application of mathematical concepts in image alignment.
 
 ---
 
@@ -109,9 +84,6 @@ pip install numpy matplotlib opencv-python
 1. Open in Google Colab.
 2. Upload two grayscale images.
 3. Run all cells to compute and visualize cross-correlation.
-
----
-
 ## 💡 Potential Extensions
 
 - Use in video tracking to align frames.
